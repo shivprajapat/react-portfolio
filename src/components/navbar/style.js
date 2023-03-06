@@ -6,10 +6,10 @@ const Navbar = styled.nav`
   @media only screen and (max-width: 768px) {
     width: 100%;
   }
-`;
+  `;
 
-const Container = styled.div`
-  width: 1400px;
+const Container = styled.aside`
+  width: 1140px;
   display: flex;
   justify-content: space-between;
   align-items: center;
