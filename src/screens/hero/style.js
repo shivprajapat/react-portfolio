@@ -83,7 +83,7 @@ const Right = styled.div`
   }
 `;
 const Img = styled.img`
-  width: 800px;
+width: 800px;
   height: 600px;
   object-fit: contain;
   position: absolute;
@@ -103,8 +103,7 @@ const Img = styled.img`
     to {
       transform: translateY(20px);
     }
-  }
-`;
+  }`;
 export {
   Wrapper,
   Container,
