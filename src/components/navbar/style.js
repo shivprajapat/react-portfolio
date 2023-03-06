@@ -9,7 +9,7 @@ const Navbar = styled.nav`
   `;
 
 const Container = styled.aside`
-  width: 1140px;
+  width: 1400px;
   display: flex;
   justify-content: space-between;
   align-items: center;
