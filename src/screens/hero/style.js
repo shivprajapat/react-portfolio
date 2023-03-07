@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { flexCenter, flexSpace } from "../../variable";
+import { flexSpace } from "../../variable";
 
 const Wrapper = styled.section`
   height: 100vh;
@@ -15,13 +15,16 @@ const Container = styled.div`
   height: 100%;
   scroll-snap-align: center;
   width: 1400px;
-  ${flexSpace};
+  display: flex;
+  justify-content: space-between;
   @media only screen and (max-width: 768px) {
     width: 100%;
     flex-direction: column;
-    ${flexCenter};
+    align-items: center;
+    justify-content: center;
   }
 `;
+
 const Left = styled.div`
   flex: 2;
   display: flex;
@@ -34,6 +37,7 @@ const Left = styled.div`
     align-items: center;
   }
 `;
+
 const Title = styled.h1`
   font-size: 74px;
 
@@ -43,14 +47,15 @@ const Title = styled.h1`
 `;
 
 const WhatWeDo = styled.div`
-  ${flexCenter};
-  justify-content: flex-start;
+  display: flex;
+  align-items: center;
   gap: 10px;
 `;
 
 const Line = styled.img`
   height: 5px;
 `;
+
 const Subtitle = styled.h2`
   color: #da4ea2;
 `;
@@ -74,6 +79,7 @@ const Button = styled.button`
   border-radius: 5px;
   cursor: pointer;
 `;
+
 const Right = styled.div`
   flex: 3;
   position: relative;
@@ -82,8 +88,9 @@ const Right = styled.div`
     width: 100%;
   }
 `;
+
 const Img = styled.img`
-width: 800px;
+  width: 800px;
   height: 600px;
   object-fit: contain;
   position: absolute;
@@ -103,7 +110,8 @@ width: 800px;
     to {
       transform: translateY(20px);
     }
-  }`;
+  }
+`;
 export {
   Wrapper,
   Container,

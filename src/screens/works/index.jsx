@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
-import { Container, Wrapper, Left, List, ListItem,Right } from './style'
+import { Container, Wrapper, Left, List, ListItem, Right } from './style'
 
+import { WebDesign, ProductDesign, Development } from "./components";
 const Works = () => {
     const data = [
         "Web Design",
@@ -23,7 +24,15 @@ const Works = () => {
                         ))}
                     </List>
                 </Left>
-                <Right></Right>
+                <Right>
+                    {work === "Web Design" ? (
+                        <WebDesign />
+                    ) : work === "Development" ? (
+                        <Development />
+                    ) : (
+                        <ProductDesign />
+                    )}
+                </Right>
             </Container>
         </Wrapper>
     )
